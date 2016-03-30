@@ -1,0 +1,27 @@
+# Build artifacts.
+*.obj
+*.o
+*.err
+*.exe
+*.com
+*.bin
+*.lib
+*.bak
+*.map
+
+# Disk image files.
+*.iso
+*.log
+*.img
+
+# Documentation artifacts.
+doc/internal
+
+# Related to the tools build.
+src/tools/bmp2hex
+src/tools/copyboot
+src/tools/memalign
+
+# Vim swapfile
+*.swp
+*.swo
