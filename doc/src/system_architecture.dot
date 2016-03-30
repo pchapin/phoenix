@@ -1,0 +1,29 @@
+// To compile this graph into an SVG image, type:
+//
+//     dot -Tsvg -o top_level_design.svg top_level_design.dot
+//
+// Dot is also capable of generating other file types, such as .png and .ps
+// files.
+digraph top_level_design {
+    component_0 [label="Kernel"]
+    component_1 [label="Video"]
+    component_2 [label="Sound"]
+    component_3 [label="Game/Program"]
+    component_4 [label="Input Devices"]
+    component_5 [label="KB"]
+    component_6 [label="GP"]
+
+    // Kernel points at...
+    component_0 -> component_1
+    component_0 -> component_2
+    component_0 -> component_3
+    component_0 -> component_4
+
+    // Kernel is pointed at by...
+    component_1 -> component_0
+    component_2 -> component_0
+    component_3 -> component_0
+    component_4 -> component_0
+    component_5 -> component_0
+    component_6 -> component_0
+}
