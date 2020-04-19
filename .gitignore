@@ -16,6 +16,7 @@
 
 # Documentation artifacts.
 doc/internal
+doc/gen
 
 # Related to the tools build.
 src/tools/bmp2hex
