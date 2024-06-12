@@ -5,10 +5,11 @@ TODO Items
 + Port src/boot/boot.asm to WASM syntax. This will remove the dependency on NASM and allow the
   entire Phoenix system to be built with Open Watcom tools.
 
-+ It would be nice if there was a shell script or equivalent that went through the steps of
-  setting up a boot disk. The script should allow a boot disk to be created from scratch and
-  also support adding new programs to an existing boot disk. I'm imagining some kind of "boot
-  disk management" script.
++ The script that sets up the boot disk should be ported to Windows (e.g., PowerShell). The
+  script coupld also be elaborated to include additional features.
+  
++ Creating the boot disk requires `mtools` which is a Unix toolkit. It is available for Cygwin.
+  Scripts and documentation need to be updated to account for this.
 
 Documentation
 -------------

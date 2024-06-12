@@ -1,6 +1,6 @@
 ############################################################################
 # FILE        : makefile
-# LAST REVISED: 2008-02-02
+# LAST REVISED: 2024-06-12
 # AUTHOR      : Phoenix Contributors
 #
 # This is the makefile for the kernel.
@@ -27,4 +27,3 @@ kernel.lib: $(OBJ)
 
 clean: .SYMBOLIC
     rm -f *.obj *.err *.bak kernel.lib
-

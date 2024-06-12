@@ -1,13 +1,13 @@
 ############################################################################
 # FILE        : makefile
-# LAST REVISED: 2008-01-30
+# LAST REVISED: 2024-06-12
 # AUTHOR      : Phoenix Contributors
 #
 # This is the makefile for the video module.
 ############################################################################
 
 .c.obj: .AUTODEPEND
-    wcc -q -ms -s -w4 -bt=dos -x -fo=$[*.obj -I../../RTL -I../../kernel $[*.c
+    wcc -q -ms -s -w4 -bt=dos -x -fo=$[*.obj -I..\..\RTL -I..\..\kernel $[*.c
 
 OBJ=images.obj vga.obj video.obj vparser.obj xvideo.obj
 

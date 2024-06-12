@@ -1,13 +1,13 @@
 ############################################################################
 # FILE        : makefile
-# LAST REVISED: 2008-04-18
+# LAST REVISED: 2024-06-12
 # AUTHOR      : Phoenix Contributors
 #
 # This is the makefile for the audio module.
 ############################################################################
 
 .c.obj: .AUTODEPEND
-    wcc -q -ms -s -w4 -bt=dos -x -fo=$[*.obj -I../../RTL -I../../kernel $[*.c
+    wcc -q -ms -s -w4 -bt=dos -x -fo=$[*.obj -I..\..\RTL -I..\..\kernel $[*.c
 
 OBJ=beep.obj
 
