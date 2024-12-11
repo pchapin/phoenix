@@ -1,17 +1,17 @@
 ############################################################################
 # FILE        : makefile
-# LAST REVISED: 2024-06-12
+# LAST REVISED: 2024-12-11
 # AUTHOR      : Phoenix Contributors
 #
 # This is the makefile for the tools.
 ############################################################################
 
-all: copyboot.exe memalign.exe
+all: copyboot memalign
 
-copyboot.exe:  copyboot.c
+copyboot:  copyboot.c
     wcl386 -zq copyboot.c
 
-memalign.exe:  memalign.c
+memalign:  memalign.c
     wcl386 -zq memalign.c
 
 clean: .SYMBOLIC

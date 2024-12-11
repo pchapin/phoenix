@@ -1,13 +1,13 @@
 ############################################################################
 # FILE        : makefile
-# LAST REVISED: 2024-06-12
+# LAST REVISED: 2024-12-11
 # AUTHOR      : Phoenix Contributors
 #
 # This is the makefile for the test and demonstration applications.
 ############################################################################
 
 .c.obj: .AUTODEPEND
-    wcc -q -ms -s -w4 -wcd201 -bt=dos -x -fo=$[*.obj -I..\RTL -I..\kernel -I..\modules\video -I..\modules\keyboard -I..\modules\audio -I..\modules\gamepad $[*.c
+    wcc -q -ms -s -w4 -wcd201 -bt=dos -x -fo=$[*.obj -I../RTL -I../kernel -I../modules/video -I../modules/keyboard -I../modules/audio -I../modules/gamepad $[*.c
 
 .asm.obj:
     wasm -fo=$[*.obj $[*.asm

@@ -7,7 +7,7 @@
 ############################################################################
 
 .c.obj: .AUTODEPEND
-    wcc -q -ms -s -w4 -bt=dos -x -fo=$[*.obj -I..\..\RTL -I..\..\kernel $[*.c
+    wcc -q -ms -s -w4 -bt=dos -x -fo=$[*.obj -I../../RTL -I../../kernel $[*.c
 
 OBJ=beep.obj
 
